@@ -30,7 +30,7 @@
 
 - Titleに "test" , Keyに _ssh鍵の生成_ で生成したssh公開鍵を貼り付け, Allow write accessにチェックしAdd keyを押下
 
-  ![image](/images/04_add_ssh_pub_key.png)
+  ![image](/images/05_add_ssh_pub_key.png)
   
 ## 初めてのpush
 - git コマンドのインストール
