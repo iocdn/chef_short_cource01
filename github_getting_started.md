@@ -1,11 +1,17 @@
 # 初めてのgithubへの保存
 
 ## ssh鍵の生成
+- cookbookが保存されているサーバにログインします。
+
+```
+local $ ssh xxx.xxx.xxx.xxx
+```
+
 - cookbookが保存されたサーバでsshの鍵を生成します。
 
 ```
- $ ssh-keygen -t rsa -P ''
- $ cat ~/.ssh/id_rsa.pub
+$ ssh-keygen -t rsa -P ''
+$ cat ~/.ssh/id_rsa.pub
  == ココで出力される ssh公開鍵 を 下記　ssh鍵登録で登録します。 ==
 ```
 
@@ -33,8 +39,41 @@
   ![image](/images/05_add_ssh_pub_key.png)
   
 ## 初めてのpush
+- cookbookが保存されているサーバにログインします。
+
+```
+local $ ssh xxx.xxx.xxx.xxx
+```
+
 - git コマンドのインストール
+
+```
+$ sudo yum -y install git
+```
+
 -  git リポジトリの初期化
+
+```
+$ cd ~/chef-repo
+$ git init
+$ git config --global user.name username
+$ git config --global user.email mailaddress
+```
 -  remoteリポジトリ(githubリポジトリの登録)
+
+```
+$ git remote add origin git@github.com:アカウント名/chef-repo.git
+```
+
 - cookbookのコミット
+
+```
+$ git init
+$ git add ./*
+$ git commit -m "initial commit"
+```
+
 - remoteリポジトリへのpush
+```
+$ git push origin master
+```
