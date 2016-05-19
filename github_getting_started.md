@@ -1,6 +1,6 @@
 # 初めてのgithubへの保存
 
-## SSH鍵の生成
+## [local] SSH鍵の生成
 
 ## chef-repoリポジトリの作成
 
