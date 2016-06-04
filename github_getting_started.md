@@ -65,6 +65,14 @@ $ git config --global user.email username@ap-com.co.jp
 $ git remote add origin git@github.com:アカウント名/chef-repo.git
 ```
 
+- logファイルの除外
+
+```
+echo "log/capistrano.log
+nodes/*.json" > .gitignore
+touch log/.gitkeep
+```
+
 - cookbookのコミット
 
 ```
