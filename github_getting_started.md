@@ -57,7 +57,7 @@ $ sudo yum -y install git
 $ cd ~/chef-repo
 $ git init
 $ git config --global user.name username
-$ git config --global user.email mailaddress
+$ git config --global user.email username@ap-com.co.jp
 ```
 -  remoteリポジトリ(githubリポジトリの登録)
 
